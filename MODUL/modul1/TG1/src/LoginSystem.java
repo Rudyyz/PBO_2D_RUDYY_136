@@ -1,21 +1,41 @@
 import java.util.Scanner;
 
-public class Main {
+
+class Admin{
+    private final String username = "RUDI";
+    private final String PW = "123";
+
+    public boolean login(String inputUsername,String inputPW){
+        return inputUsername.equals(username) && inputPW.equals(PW);
+    }
+}
+
+class Mahasiswa{
+    private final String nama = "M Rudi Mustakim";
+    private final long nim = 202410370110136l;
+
+    public boolean login(String inputNama, Long inputnim){
+        return inputNama.equals(nama) && inputnim.equals(nim);
+    }
+
+    public void tampilkanInfo(){
+        System.out.println("Login Mahasiswa Berhasil");
+        System.out.println("Nama :"+nama);
+        System.out.println("NIM  :"+nim);
+    }
+}
+public class LoginSystem {
     public static void main(String[] args){
-
-        int pilihan;
-        String Username = "RUDI";
-        String Password = "123";
-        String Nama = "M Rudi Mustakim";
-        long NIM = 202410370110136l;
-
         Scanner objInput = new Scanner(System.in);
+        Admin admin = new Admin();
+        Mahasiswa mahasiswa = new Mahasiswa();
+
 
         System.out.println("Pilih jenis login:");
         System.out.println("1. Admin");
         System.out.println("2. Mahasiswa");
         System.out.print("Pilih opsi anda (1/2): ");
-        pilihan = objInput.nextInt();
+        int pilihan = objInput.nextInt();
         objInput.nextLine();
 
         switch (pilihan) {
@@ -23,9 +43,9 @@ public class Main {
                 System.out.print("Masukkan username: ");
                 String username = objInput.nextLine();
                 System.out.print("Masukkan password: ");
-                String password = objInput.nextLine();
+                String PW = objInput.nextLine();
 
-                if(username.equals(Username) && password.equals(Password)){
+                if(admin.login(username,PW)){
                     System.out.println("Login anda berhasil");
                 } else {
                     System.out.println("Login gagal! username atau password salah");
@@ -35,9 +55,9 @@ public class Main {
                 System.out.print("Masukkan Nama: ");
                 String nama = objInput.nextLine();
                 System.out.print("Masukkan NIM: ");
-                long nim = objInput.nextLong();
+                long NIM = objInput.nextLong();
 
-                if(nama.equals(Nama) && nim == NIM){
+                if(mahasiswa.login(nama,NIM)){
                     System.out.println("Login Mahasiswa Berhasil!");
                     System.out.println("Nama: " + nama);
                     System.out.println("NIM: " + NIM);
