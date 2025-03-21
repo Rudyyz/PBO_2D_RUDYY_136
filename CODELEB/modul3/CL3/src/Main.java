@@ -1,4 +1,4 @@
-//codingan saya tambahkan untuk user dapat mengimput data nama dan kesehatan
+//codingan saya tambahkan untuk user dapat mengimput data nama, kesehatan dan demek
 
 import java.util.Scanner;
 
@@ -33,31 +33,37 @@ class KarakterGame{
 
 }
 class pahlawan extends KarakterGame{
-    public pahlawan(String nama, int kesehatan){
+    private int demek;
+    public pahlawan(String nama, int kesehatan, int demek){
         super(nama,kesehatan);
+        this.demek = demek;
     }
     public void serang(KarakterGame target){
         System.out.println(getNama()+ " Menyertang "+target.getNama()+" Menggunakan Pedang");
-        target.setKesehatan(target.getKesehatan() -20);
+        target.setKesehatan(target.getKesehatan() -demek);
         System.out.println("Kesehatan terbaru " +target.getKesehatan());
     }
     public void status(){
         System.out.println(getNama()+ " Memiliki Kesehatan : " +getKesehatan());
+        System.out.println(getNama()+ " Kekuatan Serangan : " +demek);
     }
 
 }
 
 class Musuh extends KarakterGame{
-    public Musuh(String nama, int kesehatan){
+    private int demek;
+    public Musuh(String nama, int kesehatan, int demek){
         super(nama, kesehatan);
+        this.demek = demek;
     }
     public void serang(KarakterGame target){
         System.out.println(getNama()+ " Menyerang "+ target.getNama()+ " Menggunkan sihir");
-        target.setKesehatan(target.getKesehatan() -15);
+        target.setKesehatan(target.getKesehatan() -demek);
         System.out.println("Kesehatan Terbaru "+target.getKesehatan());
     }
     public void status(){
         System.out.println(getNama()+ " Memiliki Kesehatan : " +getKesehatan());
+        System.out.println(getNama()+ " Kekuatan Serangan : " +demek);
     }
 }
 public class Main {
@@ -68,15 +74,19 @@ public class Main {
         String namaPahlawan = input.nextLine();
         System.out.print("Masukan Kesehatan Pahlawan : ");
         int kesehatanPahlawan = input.nextInt();
+        System.out.print("Demek dari pahlawan : ");
+        int demekPahlawan = input.nextInt();
         input.nextLine();
 
         System.out.print("Masukan nama Musuh : ");
         String namaMusuh = input.nextLine();
         System.out.print("Masukan Kesehatan Musuh : ");
         int kesehatanMusuh = input.nextInt();
+        System.out.print("Demek dari musuh : ");
+        int demekMusuh = input.nextInt();
 
-        pahlawan pahlawanObj = new pahlawan(namaPahlawan, kesehatanPahlawan);
-        Musuh musuhObj = new Musuh(namaMusuh, kesehatanMusuh);
+        pahlawan pahlawanObj = new pahlawan(namaPahlawan, kesehatanPahlawan, demekPahlawan);
+        Musuh musuhObj = new Musuh(namaMusuh, kesehatanMusuh, demekMusuh);
 
         System.out.println("\n=== STATUS AWAL ===");
         pahlawanObj.status();
