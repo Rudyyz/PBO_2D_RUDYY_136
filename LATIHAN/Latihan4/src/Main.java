@@ -1,3 +1,5 @@
+// untuk penulisan mata uang saya import java.text.NumberFormat; dan import java.util.Locale; dan saya bingun untuk tambahan uang meneger di bagian level itu dalam nomial jutaan atau ribuan pak
+
 import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Scanner;
