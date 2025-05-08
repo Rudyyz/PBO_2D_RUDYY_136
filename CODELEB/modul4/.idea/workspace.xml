@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="817a154e-d54e-4089-88dd-740c94c94aa7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../LATIHAN/Latihan8/src/com/latihan/projek/demoAbstrak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../LATIHAN/Latihan8/src/com/latihan/projek/latihan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../TUGAS/modul4/TG4/src/com/praktikum/actions/AdminActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../TUGAS/modul4/TG4/src/com/praktikum/actions/MahasiswaActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../TUGAS/modul4/TG4/src/com/praktikum/main/LoginSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../TUGAS/modul4/TG4/src/com/praktikum/users/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../TUGAS/modul4/TG4/src/com/praktikum/users/Mahasiswa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../TUGAS/modul4/TG4/src/com/praktikum/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CL4/src/com/example/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CL4/src/com/example/app/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Rudyyz"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Rudyyz/PBO_2D_RUDYY_202410370110136.git",
+    "accountId": "c6dac306-b48d-4d32-b2b2-db1a33b47ae7"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2whnoIzotcbfctOGi1apWqB9jwg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/PBO/LATIHAN/Latihan8"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="817a154e-d54e-4089-88dd-740c94c94aa7" name="Changes" comment="" />
+      <created>1746502846356</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746502846356</updated>
+    </task>
+    <servers />
+  </component>
+</project>
