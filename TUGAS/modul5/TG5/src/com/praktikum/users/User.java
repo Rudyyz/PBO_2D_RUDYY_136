@@ -24,5 +24,5 @@ public abstract class User {
         this.nim = nim;
     }
     public abstract boolean login(String input1, String input2);
-    public abstract void displayAppMenu(Scanner scanner);
+    public abstract boolean displayAppMenu(Scanner scanner);
 }
