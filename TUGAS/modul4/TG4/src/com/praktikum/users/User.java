@@ -1,10 +1,12 @@
 package com.praktikum.users;
 
+import java.util.Scanner;
+
 public abstract class User {
     protected String nama;
-    protected long nim;
+    protected String nim;
 
-    public User(String nama, long nim) {
+    public User(String nama, String nim) {
         this.nama = nama;
         this.nim = nim;
     }
@@ -12,15 +14,15 @@ public abstract class User {
     public String getNama() {
         return nama;
     }
-    public long getNim() {
+    public String getNim() {
         return nim;
     }
     public void setNama(String nama) {
         this.nama = nama;
     }
-    public void setNim(long nim) {
+    public void setNim(String nim) {
         this.nim = nim;
     }
-
-    public abstract void displayAppMenu();
+    public abstract boolean login(String input1, String input2);
+    public abstract void displayAppMenu(Scanner scanner);
 }

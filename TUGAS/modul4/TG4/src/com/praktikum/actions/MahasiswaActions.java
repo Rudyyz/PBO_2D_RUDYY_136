@@ -3,6 +3,5 @@ import java.util.Scanner;
 
 public interface MahasiswaActions {
     void reportItem(Scanner scanner);
-
     void viewReportItems(Scanner scanner);
 }
