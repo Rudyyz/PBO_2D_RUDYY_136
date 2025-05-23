@@ -8,10 +8,6 @@ public class ManajemenStok {
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
 
-        daftarBarang.add(new Barang("pensil", 30));
-        daftarBarang.add(new Barang("pulpen",20));
-        daftarBarang.add(new Barang("penghapus",20));
-
         while (running) {
             System.out.println("\n===== Menu Manajemen Stok =====");
             System.out.println("1. Tambah Barang Baru");

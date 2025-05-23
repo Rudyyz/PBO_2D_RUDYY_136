@@ -21,11 +21,11 @@ public class Admin extends User implements AdminActions {
 
     @Override
     public boolean displayAppMenu(Scanner scanner) {
-        System.out.println("==== Informasi Pengguna ====");
+        System.out.println("=====> Informasi Pengguna <=====");
         System.out.println("Username: " + username);
 
         while (true) {
-            System.out.println("\n===== Menu Admin =====");
+            System.out.println("\n==---== Menu Admin ==---==");
             System.out.println("1. Kelola Barang");
             System.out.println("2. Kelola Mahasiswa");
             System.out.println("0. Kembali");
@@ -59,7 +59,7 @@ public class Admin extends User implements AdminActions {
         boolean kembali = false;
 
         while (!kembali) {
-            System.out.println("\n==== Kelola Barang ====");
+            System.out.println("\n==---== Kelola Barang ==---==");
             System.out.println("1. Lihat Semua Laporan");
             System.out.println("2. Tandai Barang Telah Diambil (Claimed)");
             System.out.println("0. Kembali");
@@ -90,7 +90,7 @@ public class Admin extends User implements AdminActions {
             return;
         }
 
-        System.out.println("==== Semua Laporan Barang ====");
+        System.out.println("==---== Semua Laporan Barang ==---==");
         for (item barang : LoginSystem.reportedItems) {
             System.out.println("Nama Barang : " + barang.getItemNama());
             System.out.println("Lokasi Barang : " + barang.getLocation());
@@ -141,7 +141,7 @@ public class Admin extends User implements AdminActions {
         boolean kembali = false;
 
         while (!kembali) {
-            System.out.println("\n==== Kelola Mahasiswa ====");
+            System.out.println("\n==---== Kelola Mahasiswa ==---==");
             System.out.println("1. Tambah Mahasiswa");
             System.out.println("2. Hapus Mahasiswa");
             System.out.println("0. Kembali");

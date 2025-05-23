@@ -19,7 +19,7 @@ public class LoginSystem {
         boolean loginSukses = false;
 
         while (!loginSukses) {
-            System.out.println("\n===== Pilih jenis login =====");
+            System.out.println("\n==---== Pilih jenis login ==---==");
             System.out.println("1. Admin");
             System.out.println("2. Mahasiswa");
             System.out.println("0. log out");

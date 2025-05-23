@@ -16,12 +16,12 @@ public class Mahasiswa extends User implements MahasiswaActions {
 
     @Override
     public boolean displayAppMenu(Scanner scanner) {
-        System.out.println("===== Informasi Pengguna =====");
+        System.out.println("=====> Informasi Pengguna <=====");
         System.out.println("Nama: " + nama);
         System.out.println("NIM: " + nim);
 
         while (true) {
-            System.out.println("\n===== Menu Mahasiswa =====");
+            System.out.println("\n==---== Menu Mahasiswa ==---==");
             System.out.println("1. Lapor Barang");
             System.out.println("2. Lihat Daftar Laporan");
             System.out.println("0. Kembali");
@@ -64,7 +64,7 @@ public class Mahasiswa extends User implements MahasiswaActions {
 
         System.out.println();
 
-        System.out.println("===== Barang Berhasil di Laporkan =====");
+        System.out.println("==---== Barang Berhasil di Laporkan ==---==");
         System.out.println(nama + " telah melaporkan barang: " + namaBarang);
         System.out.println("Deskripsi: " + deskripsi);
         System.out.println("Lokasi terakhir: " + lokasi);
@@ -75,7 +75,7 @@ public class Mahasiswa extends User implements MahasiswaActions {
         if(LoginSystem.reportedItems.isEmpty()){
             System.out.println("Belum ada laporan barang.");
         }else{
-            System.out.println("==== daftar barang yang Dilaporkan ==== ");
+            System.out.println("==---== daftar barang yang Dilaporkan ==---== ");
             for(item barang : LoginSystem .reportedItems){
                 if(barang.getStatus().equals("Reported")){
                     System.out.println("Nama barang : "+barang.getItemNama());
